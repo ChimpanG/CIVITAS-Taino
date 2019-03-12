@@ -46,8 +46,8 @@ VALUES
 	("en_US",	"LOC_PROJECT_CVS_TAINO_UP_DESCRIPTION",	
 	"Taíno unique project that grants [ICON_Faith] Faith equal to 15% of the [ICON_Production] Production put into it and +1 [ICON_INFLUENCEPERTURN] Influence points per turn while active. Provides [ICON_GreatPerson] Great Person Points for [ICON_GreatWriter] Great Writers, [ICON_GreatArtist] Great Artists and [ICON_GreatMusician] Great Musicians upon completion."	),
 
-	("en_US",	"LOC_BUILDING_CVS_TAINO_UP_DUMMY_NAME",	"Areyto Ceremony"	),
-	("en_US",	"LOC_BUILDING_CVS_TAINO_UP_DUMMY_NAME",	"An Areyto Ceremony has been started in this city."	),
+	("en_US",	"LOC_BUILDING_CVS_TAINO_UP_DUMMY_NAME",			"Areyto Ceremony"	),
+	("en_US",	"LOC_BUILDING_CVS_TAINO_UP_DUMMY_DESCRIPTION",	"An Areyto Ceremony has been started in this city."	),
 
 -----------------------------------------------
 -- Mountains
