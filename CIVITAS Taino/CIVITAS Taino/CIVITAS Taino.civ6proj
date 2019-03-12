@@ -49,10 +49,16 @@
     <Content Include="ArtDefs\Landmarks.artdef">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ArtDefs\Overlay.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ArtDefs\StrategicView.artdef">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ArtDefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\UserInterface.artdef">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Assets\DIS_CVS_BATEY_Base_01.ast">
@@ -98,6 +104,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="XLPs\Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LensAssets.xlp">
       <SubType>Content</SubType>
     </Content>
     <Content Include="XLPs\StrategicView_Districts.xlp">
