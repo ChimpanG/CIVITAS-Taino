@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GREATPERSON] Anacaona</Name>
+    <Guid>0e755ff7-6e88-431f-a99a-5fe5e24cc857</Guid>
+    <ProjectGuid>686f0dd2-67d4-4af1-a311-8713b3608ed4</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Anacaona as a leader for CIVITAS Taino.</Teaser>
+    <Description>Adds Anacaona as a leader for CIVITAS [ICON_GOVERNMENT] Taino.</Description>
+    <Authors>ChimpanG</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+	<ModProperties>
+      <CompatibleVersions>2.0</CompatibleVersions>
+    </ModProperties>
+    <AssemblyName>CIVITAS Anacaona</AssemblyName>
+    <RootNamespace>CIVITAS Anacaona</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Anacaona_Setup_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Config.sql</File></UpdateDatabase><UpdateText id="Anacaona_Setup_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Localisation.sql</File></UpdateText><UpdateIcons id="Anacaona_Setup_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Icons.sql</File></UpdateIcons><UpdateColors id="Anacaona_Setup_Colors"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Colors.sql</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Anacaona_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Leader.sql</File><File>Core/Anacaona_UA.sql</File><File>Core/Anacaona_UI.sql</File><File>Core/Anacaona_Agenda.sql</File><File>Core/Anacaona_Strategy.sql</File><File>Core/Anacaona_ModSupport.sql</File></UpdateDatabase><UpdateIcons id="Anacaona_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Icons.sql</File></UpdateIcons><UpdateText id="Anacaona_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Localisation.sql</File></UpdateText><UpdateColors id="Anacaona_Colors"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Anacaona_Colors.sql</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="CIVITAS [ICON_GOVERNMENT] Taíno" id="e6175fc8-e018-4d21-b52a-f6d5aeb292a5" />
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Anacaona_Agenda.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Leader.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_Strategy.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Anacaona_UI.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
